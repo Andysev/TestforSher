@@ -283,7 +283,7 @@ h1 {
 
 .object_btn {
   background: #2a579c;
-  width: 325px;
+  width: 285px;
   height: 70px;
   color: white;
   border-radius: 10px;
@@ -996,6 +996,12 @@ h1 {
   }
 }
 
+@media (max-width: 1660px) {
+  .slider-list {
+    max-width: 1020px;
+  }
+}
+
 @media (max-width: 1645px) {
   .banner {
     margin-left: 100px;
@@ -1075,6 +1081,12 @@ h1 {
   }
 }
 
+@media (max-width: 1194px) {
+  .slider-list {
+    max-width: 760px;
+  }
+}
+
 @media (max-width: 1140px) {
   .aboutus_points {
     flex-direction: column;
@@ -1126,7 +1138,7 @@ h1 {
     text-align: center;
   }
   .banner_title2::before {
-    width: 104%;
+    width: 107%;
   }
 }
 
@@ -1153,6 +1165,12 @@ h1 {
   }
   .main::after {
     content: "";
+  }
+}
+
+@media (max-width: 925px) {
+  .slider-list {
+    max-width: 580px;
   }
 }
 
@@ -1496,6 +1514,7 @@ h1 {
   }
   .banner_title2 {
     font-size: 28px;
+    text-align: center;
   }
   .banner_title3 {
     font-size: 26px;
@@ -1585,6 +1604,14 @@ h1 {
   }
   .aboutus {
     padding-left: 15px;
+  }
+  .footer {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .footer_uslygi {
+    padding: 0;
+    margin: 0;
   }
 }
 
