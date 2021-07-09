@@ -7,6 +7,8 @@ const browsersync = require("browser-sync");
 browserSync = require('browser-sync');
 const pug = require('gulp-pug');
 const dist = "./dist";
+const imagemin    = require('gulp-imagemin');
+const pngquant = require('imagemin-pngquant');
 
 gulp.task("pug", function(){
   return gulp.src('./src/*.pug')
@@ -31,11 +33,19 @@ gulp.task('build-js', function(){
     gulp.src("./src/icons/**/*.*")
         .pipe(gulp.dest(dist + "/icons"));
    
-    return gulp.src("./src/img/**/*.*")
-        .pipe(gulp.dest(dist + "/img"))
-        .pipe(browsersync.stream());
+ 
     
   });
+  gulp.task('img', function() {
+		return gulp.src('./src/img/**/*') // Берем все изображения из app
+			.pipe(imagemin({ // Сжимаем их с наилучшими настройками
+				interlaced: true,
+				progressive: true,
+				svgoPlugins: [{removeViewBox: false}],
+				use: [pngquant()]
+			}))
+			.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
+	});
 
   gulp.task("build-sass", () => {
     return gulp.src("./src/scss/**/*.scss")
@@ -61,13 +71,12 @@ gulp.task('watch', function(){
       });
     });
   
-gulp.task("build", gulp.parallel("copy-html", "copy-assets", "build-sass", "build-js"));
+gulp.task("build", gulp.parallel("copy-html", "copy-assets", "build-sass", "build-js", "img"));
 
 gulp.task("prod", () => {
   gulp.src("./src/index.html")
       .pipe(gulp.dest(dist));
-  gulp.src("./src/img/**/*.*")
-      .pipe(gulp.dest(dist + "/img"));
+ 
   gulp.src("./src/icons/**/*.*")
       .pipe(gulp.dest(dist + "/icons"));
   gulp.src("./src/js/main.js")
