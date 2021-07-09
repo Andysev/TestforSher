@@ -1,0 +1,17 @@
+
+@mixin f300 {
+    font-family: 'MullerThin', sans-serif;
+    font-weight: 300;
+}
+@mixin f500 {
+    font-family: 'MullerMedium', sans-serif;
+    font-weight: 500;
+}
+@mixin f700 {
+    font-family: 'MullerRegular', sans-serif;
+    font-weight: 700;
+}
+@mixin f800 {
+    font-family: 'MullerBold', sans-serif;
+    font-weight: 800;
+}

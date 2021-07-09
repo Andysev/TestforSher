@@ -1,0 +1,285 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.css")
+        title Document
+    body.body(id="mainContent")
+        header.header(id="header" )
+            .header_logo 
+                img(src="img/logo.png", alt="") 
+            .header_location г. Симферополь,
+                span ул. г. Аджимушкая, 5/15 кв 2
+            .header_phone +7 (978) 730-80-58 
+                a.header_call(href="#" target="_blank" tel:79787308058) Заказать звонок
+            .mob_header 
+                .mob-header_location г. Симферополь,
+                    span ул. г. Аджимушкая, 5/15 кв 2
+                .mob-header_phone +7 (978) 730-80-58 
+                    a.header_call(href="#" target="_blank" tel:79787308058) Заказать звонок
+            .header_menu 
+                ul.headermenu_spisok
+                    li АВТОГАЗКОМПЛЕКТ
+                    li Заправка газгольдеров
+                    li Выгодное сотрудничество
+                    li Оставьте заявку
+        section.main.animate 
+            h1.main_title ДОСТАВИМ
+                span.blue_title(id="blue")  газ
+                span  в любую точку Крыма от
+                    span.blue  25 Р/л 
+            .main_text Компания АВТОГАЗКОМПЛЕКТ-КРЫМ специализируется на поставках СУГ (сжиженного углеводородного газа). Вы можете купить пропан-бутан крупным, мелким оптом и в розницу для заправки газгольдеров разных объемов
+            .main_send 
+                form.main_send-zayvka 
+                    input.send_phone(id="online_phone" name="phone" type="tel" maxlength="50"   value="+7(___)___-__-__" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7(___)___-__-__")
+                    button.send_btn(type="submit") ОТПРАВИТЬ ЗАЯВКУ
+                button.main_price РАССЧИТАТЬ СТОИМОСТЬ ЗАПРАВКИ
+            ul.main_points
+                li.points_elem 
+                    .points_elem-icon
+                        img(src="img/Ellipseicon.png")
+                        img.circle_icon(src="img/tachometericon.png")
+                    .points_elem-text Заполним газгольдер по счетчику и выдадим чек на месте.
+                li.points_elem 
+                    .points_elem-icon 
+                        img(src="img/Ellipseicon.png")
+                        img.circle_icon(src="img/oil-tankicon.png")
+                    .points_elem-text Доставка осуществляется в  зимний период за 1-2 дня, в летний - в течение дня.
+                li.points_elem 
+                    .points_elem-icon 
+                        img(src="img/Ellipseicon.png")
+                        img.circle_icon(src="img/filtericon.png")
+                    .points_elem-text Газ проходит фильтрацию перед доставкой. Вы получите газ без примесей серы, воды и масла
+            .objects_wrapper
+                .objects_title Заправляем газгольдеры на объектах
+                .objects_btns 
+                    button.object_btn ЧАСТНЫЕ КЛИЕНТЫ
+                    button.object_btn ДАЧНЫЕ ПОСЕЛКИ
+                    button.object_btn КОМПЛЕКСЫ АГЗС
+                    button.object_btn ПРОМЫШЛЕННЫЕ ОРГАНИЗАЦИИ
+                .object_blocks
+                    .objects_info 
+                        article.objects_info-text Газгольдеры для частного дома — это стальные емкости, предназначенные для хранения, распределения и подачи газового топлива. В качестве топлива используется СУГ — сжиженный углеводородный газ, который поступает из газгольдера по трубам в виде паровой фазы. В России используются пропан-бутановые смеси. Они отличаются высокой теплотворной способностью и в то же время низким пределом взрываемости — то есть потребуется большая концентрация горючего вещества, чтобы он воспламенился при контакте с кислородом. Но важно, чтобы газгольдер был установлен в соответствии с правилами размещения сосуда под давлением на частном участке, иначе вероятность взрыва баллонов и отравления газом будет намного выше.
+                        a.objects_btn(href="#")
+                            text ОТПРАВИТЬ ЗАЯВКУ
+                    .objects_info-img 
+                            img(src="img/zapravka.png")
+        section.aboutus.animate  
+            .aboutus_title Почему с нами выгодно работать?
+            .aboutus_subtitle Доставим бытовой газ, заполним газольдер любого объема в Крыму и Севастополе
+            .aboutus_points 
+                .aboutus_point 
+                    .aboutus_point-top 
+                        .point_icon
+                            img(src="img/bluecircle.png")
+                            text.point_icon-text 01    
+                        .point_title Работаем на крымском рынке 15 лет
+                    article.point_text За это время накопили богатый опыт, расширили команду, приобрели лучшее оборудование и спецтехнику, лицензии, чтобы Вы могли получать очищенный газ в срок в самых труднодоступных уголках Крыма в любое время года.
+                .aboutus_point 
+                    .aboutus_point-top 
+                        .point_icon
+                            img(src="img/bluecircle.png")
+                            text.point_icon-text 02  
+                        .point_title Своя газонаполнительная станция в Бахчисарае
+                    article.point_text Благодаря газонаполнительной станции у нас всегда есть газ в запасе, который проходит проверку качества и Вам не придется ждать поставки очищенного пропан-бутана с материковой части России
+                .aboutus_point 
+                    .aboutus_point-top 
+                        .point_icon
+                            img(src="img/bluecircle.png")
+                            text.point_icon-text 03 
+                        .point_title Свой спецтранспорт по доставке сжиженных газов
+                    article.point_text В нашем автопарке 5 газовозов разного объема, оборудованные рукавами до 50 м и позволяющие доставить газ в удаленную и труднодоступную местность без заезда на участок и порчи его внешнего вида
+                .aboutus_point 
+                    .aboutus_point-top 
+                        .point_icon
+                            img(src="img/bluecircle.png")
+                            text.point_icon-text 04 
+                        .point_title Фильтрация перед доставкой
+                    article.point_text Газ, который приходит от производителя бывает с примесями серы, воды, масла и др., поэтому мы фильтруем газ на газонаполнительной станции, чтобы Вы получили очищенный газ и Ваши котлы не ломались
+                .aboutus_point 
+                    .aboutus_point-top 
+                        .point_icon
+                            img(src="img/bluecircle.png")
+                            text.point_icon-text 05 
+                        .point_title Доставка газа по расписанию или в день заказа
+                    article.point_text Мы наладили доставку практически по всей территории Крыма, поэтому вы можете получить газ доставку газа по расписанию или в день заказа. Обычно в зимний период доставка занимает 1-2 дня, в летний - в течение дня 
+                .aboutus_point 
+                    .aboutus_point-top 
+                        .point_icon
+                            img(src="img/bluecircle.png")
+                            text.point_icon-text 06 
+                        .point_title Мы работаем честно и заботимся о Вас
+                    article.point_text Работаем открыто и честно, заливаем литр в литр по счетчику, который установлен на газовозах стоят счетчики выданного газа, при заправке водители выбивают чеки, а менеджеры и другие работники всегда могут проконсультировать
+                .aboutus_point 
+                    .aboutus_point-top 
+                        .point_icon
+                            img(src="img/bluecircle.png")
+                            text.point_icon-text 07 
+                        .point_title Покупаем непосредственно с товарно-сырьевой биржей СПБМТСБ и Газпромом
+                    article.point_text Это общероссийская биржа, где приобретают и продают все нефтепродукты, в т.ч. Газпром.Газ поступает на газонаполнительную станциюв Бахчисарае с заводов Газпрома «Сургут» и «Каргала», а оттуда разливается по газовозам.
+                .aboutus_point 
+                    .aboutus_point-top 
+                        .point_icon
+                            img(src="img/bluecircle.png")
+                            text.point_icon-text 08 
+                        .point_title Мы работаем соблюдая все нормативы и требования
+                    article.point_text Весь товар приходит с паспортами качества от производителя. С другими документами Вы можете ознакомиться на странице «Документация»
+            form.aboutus_send 
+                input.send_number(id="online_phone1" name="phone" type="tel" maxlength="50"   value="+7(___)___-__-__" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7(___)___-__-__")
+                a.aboutus_btn-wrap(href="#")
+                    button.aboutus_send-btn(type="submit") ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ ГАЗОВЩИКА
+                
+        section.banner.animate 
+            .banner_text    
+                .banner_title1 Оставьте заявку и получите
+                .banner_title2 ТЕХОСМОТР ГАЗГОЛЬДЕРА
+                .banner_title3 БЕСПЛАТНО
+                .banner_points 
+                    .banner_point(id="firstBannerPoint") Осмотр газгольдера, проверка состояния вентилей, обмыливание
+                    .banner_point Консультация специалиста, устранение неполадок
+            form.banner_form
+                .banner_form-title ЗАПОЛНИТЕ ФОРМУ
+                .banner_subtitle и наш специалист свяжется с вами в течение 30 секунд
+                input.banner_name(placeholder="Имя")
+                input.banner_phone(id="online_phone3" name="phone"  maxlength="50"   value="+7(___)___-__-__" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7(___)___-__-__")
+                button.banner_btn(type="submit") ПОЛУЧИТЬ ТЕХОСМОТР
+                .banner_form-text
+                    input.banner_accept(type="checkbox" checked="checked") 
+                    text.banner_checktext Согласие на обработку персональных данных 
+
+        section.step.animate 
+            .step_title 6 простых шагов
+                span  от звонка до заправленного газгольдера
+            .step_points 
+                .step_point 
+                    .step_icons 
+                        .step_icon 
+                            img.step_icon(src="img/usericon.png")
+                        .step_num 01
+                    .step_point-title Оставьте заявку на сайте
+                    article.step_point-text Или позвоните по номеру +7 (978) 730-80-58 Наши менеджеры ответят на Ваши вопросы в течение дня
+                .step_point 
+                    .step_icons 
+                        .step_icon 
+                            img.step_icon(src="img/workericon.png")
+                        .step_num 02
+                    .step_point-title Выезд специалиста на местность
+                    article.step_point-text Мы проверим, проедет ли к Вашему участку спецтехника, правильно ли установлен газгольдер и т.п.
+                .step_point 
+                    .step_icons 
+                        .step_icon 
+                            img.step_icon(src="img/packageicon.png")
+                        .step_num 03
+                    .step_point-title Консультация специалиста на месте
+                    article.step_point-text Ответим на вопросы точечно, дадим график поставок газа в Вашем районе, договоримся о важных для Вас деталях
+                .step_point 
+                    .step_icons 
+                        .step_icon 
+                            img.step_icon(src="img/truckicon.png")
+                        .step_num 04
+                    .step_point-title Контакт с водителем газовоза
+                    article.step_point-text Мы передадим Ваш номер непосредственно водителю, чтобы он доставил газ в удобное для Вас время
+                .step_point 
+                    .step_icons 
+                        .step_icon 
+                            img.step_icon(src="img/pressureicon.png")
+                        .step_num 05
+                    .step_point-title Заправка газгольдера
+                    article.step_point-text Водитель проверит исправность газгольдера, при необходимости удалит неполадки, заправит его, а после снова проверит на герметичность
+                .step_point 
+                    .step_icons 
+                        .step_icon 
+                            img.step_icon(src="img/partnershipicon.png")
+                        .step_num 06
+                    .step_point-title Расчет
+                    article.step_point-text После заполнения газгольдера водитель снимет показания счетчика, выдаст чек и пожелает Вам хорошего дня
+            form.step_send 
+                input.input_send(id="online_phone4" name="phone"  maxlength="50"  value="+7(___)___-__-__" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7(___)___-__-__")
+                button.step_btn(type="submit") ОТПРАВИТЬ ЗАЯВКУ
+        section.azs.animate 
+            .azs_title Многие годы мы 
+                a(href="#") заправляем газгольдеры 
+                text для крупных и мелких сетей АЗС, предприятий и частных домов по Крыму и Севастополю  
+            .azs_slider 
+                .slider1
+                    .slider-list 
+                        .slider-track
+                            .slide 
+                                .bank_element 
+                                    img(src="img/balka.png", alt="")
+                            .slide 
+                                .bank_element 
+                                    img(src="img/atan.png", alt="")
+                            .slide 
+                                .bank_element 
+                                    img(src="img/crs.png", alt="")
+                            .slide 
+                                .bank_element 
+                                    img(src="img/tes.png", alt="")
+                            .slide 
+                                .bank_element 
+                                    img(src="img/balka.png", alt="")  
+                            .slide 
+                                .bank_element 
+                                    img(src="img/atan.png", alt="")
+                            .slide 
+                                .bank_element 
+                                    img(src="img/crs.png", alt="")
+                            .slide 
+                                .bank_element 
+                                    img(src="img/tes.png", alt="")
+                            .slide 
+                                .bank_element 
+                                    img(src="img/balka.png", alt="") 
+                            .slide 
+                                .bank_element 
+                                    img(src="img/atan.png", alt="")
+                            .slide 
+                                .bank_element 
+                                    img(src="img/crs.png", alt="")
+                            .slide 
+                                .bank_element 
+                                    img(src="img/tes.png", alt="")
+                            .slide 
+                                .bank_element 
+                                    img(src="img/balka.png", alt="") 
+                    .slider-arrows 
+                        button.prev 
+                            img.prev_arr(src="img/prev.png")
+                        button.next   
+                            img.next_arr(src="img/next.png")
+        footer.footer 
+            a(href="#header" id="footer_logo")
+                img.footer_logo(src="img/logo.png")
+            ul.footer_menu 
+                li О Компании
+                li Доставка и оплата
+                li Документация
+                li Статья
+                li Контакты
+            ul.footer_uslygi 
+                li Доставка газа для АЗС
+                li Заправка газгольдеров
+                li(id="3list") Услуги по транспортировке сжиженного газа
+            .footer_contacts 
+                .footer_adress 
+                    .adress г.Симферополь, ул. г.Аджимушкая, 5/15 кв 2
+                    .phone +7(978) 730-80-58
+                .social_icons 
+                    a.social(href="#")
+                        .grey_circle
+                            img.vk(src="img/vk.png")
+                    a.social(href="#")
+                        .grey_circle
+                            img.insta(src="img/insta.png")
+        .footet_bottom 
+            a.politics(href="#") Политика конфиденциальности
+            .copyrate г. Симферополь © Copyright  2021 г.
+            .sher Сделано в 
+                a.sherlink(href="sheerlink")
+                    img(src="img/sher.png", alt="")
+        script(src="js/main.js")
+
+    

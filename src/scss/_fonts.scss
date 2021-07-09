@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'MullerBold', sans-serif;
+	src: url('../fonts/MullerBold.woff2') format('woff2'),
+	 url('../fonts/MullerBold.woff') format('woff');
+font-weight: 800;
+font-style: normal;
+font-display: swap;
+}
+@font-face {
+	font-family: 'MullerLight', sans-serif;
+	src: url('../fonts/MullerLight.woff2') format('woff2'),
+	 url('../fonts/MullerLight.woff') format('woff');
+font-weight: 300;
+font-style: normal;
+font-display: swap;
+}
+
+@font-face {
+	font-family: 'MullerMedium', sans-serif;
+	src: url('../fonts/MullerMedium.woff2') format('woff2'),
+	 url('../fonts/MullerMedium.woff') format('woff');
+font-weight: 500;
+font-style: normal;
+font-display: swap;
+}
+@font-face {
+	font-family: 'MullerRegular', sans-serif;
+	src: url('../fonts/MullerRegular.woff2') format('woff2'),
+	 url('../fonts/MullerRegular.woff') format('woff');
+font-weight: 700;
+font-style: normal;
+font-display: swap;
+}
+@font-face {
+	font-family: 'MullerThin', sans-serif;
+	src: url('../fonts/MullerThin.woff2') format('woff2'),
+	 url('../fonts/MullerThin.woff') format('woff');
+font-weight: 300;
+font-style: normal;
+font-display: swap;
+}
